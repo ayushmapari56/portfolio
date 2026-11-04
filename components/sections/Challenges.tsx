@@ -113,7 +113,7 @@ export default function Challenges() {
                 )}
 
                 <div className="flex gap-8 sm:gap-10 items-start">
-                  <span className="text-4xl sm:text-5xl md:text-6xl font-mono font-medium text-[#D8CEBE] tabular-nums shrink-0 leading-none mt-1 group-hover:text-orange-500 transition-colors duration-300">
+                  <span className="text-2xl sm:text-3xl md:text-4xl font-mono font-medium text-[#D8CEBE] tabular-nums shrink-0 leading-none mt-1 group-hover:text-orange-500 transition-colors duration-300">
                     {item.number}
                   </span>
                   <div>

@@ -59,15 +59,15 @@ const config: Config = {
         ],
       },
       fontSize: {
-        // A) TYPOGRAPHY SCALE-UP PRESETS
-        "hero": ["clamp(3.5rem, 9vw, 9rem)", { lineHeight: "0.98", letterSpacing: "-0.04em", fontWeight: "500" }],
-        "section": ["clamp(2.75rem, 6.5vw, 6rem)", { lineHeight: "1.02", letterSpacing: "-0.035em", fontWeight: "500" }],
-        "card": ["clamp(1.5rem, 2.2vw, 2.25rem)", { lineHeight: "1.15", letterSpacing: "-0.02em", fontWeight: "500" }],
-        "statement": ["clamp(2rem, 4.5vw, 4.5rem)", { lineHeight: "1.08", letterSpacing: "-0.03em", fontWeight: "500" }],
-        "body": ["clamp(1.0625rem, 1.2vw, 1.125rem)", { lineHeight: "1.6", fontWeight: "400" }],
-        "card-desc": ["clamp(1rem, 1.1vw, 1.0625rem)", { lineHeight: "1.55", fontWeight: "400" }],
-        "mono-label": ["clamp(0.8125rem, 0.9vw, 0.875rem)", { letterSpacing: "0.1em", fontWeight: "500" }],
-        "nav": ["clamp(0.9375rem, 1vw, 1rem)", { letterSpacing: "-0.01em", fontWeight: "500" }],
+        // Balanced Medium Typography Scale
+        "hero": ["clamp(2.5rem, 5.5vw, 4.75rem)", { lineHeight: "1.05", letterSpacing: "-0.035em", fontWeight: "500" }],
+        "section": ["clamp(1.85rem, 3.2vw, 2.75rem)", { lineHeight: "1.12", letterSpacing: "-0.03em", fontWeight: "500" }],
+        "card": ["clamp(1.2rem, 1.6vw, 1.5rem)", { lineHeight: "1.25", letterSpacing: "-0.015em", fontWeight: "500" }],
+        "statement": ["clamp(1.6rem, 2.8vw, 2.5rem)", { lineHeight: "1.18", letterSpacing: "-0.025em", fontWeight: "500" }],
+        "body": ["clamp(0.9375rem, 1vw, 1.0625rem)", { lineHeight: "1.6", fontWeight: "400" }],
+        "card-desc": ["clamp(0.875rem, 0.95vw, 0.9375rem)", { lineHeight: "1.55", fontWeight: "400" }],
+        "mono-label": ["clamp(0.75rem, 0.8vw, 0.8125rem)", { letterSpacing: "0.1em", fontWeight: "500" }],
+        "nav": ["clamp(0.875rem, 0.95vw, 0.9375rem)", { letterSpacing: "-0.01em", fontWeight: "500" }],
       },
       boxShadow: {
         "3d-glow": "0 20px 50px rgba(255, 110, 16, 0.25)",

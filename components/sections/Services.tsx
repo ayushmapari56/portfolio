@@ -140,7 +140,7 @@ function ServiceCardItem({
       <div>
         {/* Top Header: Big muted number & mono tag */}
         <div className="flex items-center justify-between mb-6">
-          <span className="text-4xl lg:text-5xl font-mono font-medium tabular-nums text-[#D8CEBE] group-hover:text-orange-500 transition-colors">
+          <span className="text-2xl lg:text-3xl font-mono font-medium tabular-nums text-[#D8CEBE] group-hover:text-orange-500 transition-colors">
             {service.number}
           </span>
           <span className="text-mono-label font-mono font-medium tracking-[0.1em] uppercase px-3.5 py-1.5 rounded-full bg-[#F5F2EB] text-[#7A7264] border border-[#E8E2D6]">

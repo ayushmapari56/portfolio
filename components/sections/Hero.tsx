@@ -197,7 +197,7 @@ export default function Hero({ onOpenContact }: HeroProps) {
           {/* Main Display: "PORTFOLIO" */}
           <div className="relative inline-block leading-none">
             <h1
-              className="font-display font-black text-white uppercase text-center tracking-[-0.04em] leading-[0.9] text-[clamp(4.5rem,14vw,13rem)]"
+              className="font-display font-black text-white uppercase text-center tracking-[-0.04em] leading-[0.92] text-[clamp(2.75rem,7.5vw,6.5rem)]"
               style={{
                 textShadow:
                   "0 2px 0 rgba(0,0,0,0.06), 0 10px 30px rgba(120,50,0,0.25)",
@@ -244,7 +244,7 @@ export default function Hero({ onOpenContact }: HeroProps) {
               className="absolute -bottom-4 sm:-bottom-7 md:-bottom-10 -left-2 sm:left-2 md:left-6 z-20 pointer-events-none select-none -rotate-6 will-change-[clip-path]"
             >
               <span
-                className="font-script block whitespace-nowrap text-[#1F2A14] text-[clamp(3.2rem,9.5vw,9.5rem)] leading-none filter drop-shadow-[0_2px_8px_rgba(0,0,0,0.12)]"
+                className="font-script block whitespace-nowrap text-[#1F2A14] text-[clamp(2rem,5vw,4.5rem)] leading-none filter drop-shadow-[0_2px_8px_rgba(0,0,0,0.12)]"
                 style={{
                   fontFamily: "var(--font-script), cursive",
                 }}

@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-dark: #0B0B14;
+    --bg-light: #F4F1EA;
+    --accent-orange: #FF6E10;
+  }
+
+  html {
+    scroll-behavior: initial;
+    color-scheme: dark;
+    background-color: #0B0B14;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: #0B0B14;
+    color: #F4F1EA;
+    font-family: var(--font-space-grotesk), "Space Grotesk", system-ui, -apple-system, sans-serif;
+    overflow-x: clip;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-space-grotesk), "Space Grotesk", sans-serif;
+    font-weight: 500;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: #FF6E10;
+    color: #FFFFFF;
+  }
+}
+
+/* Curtain Group Container - no overflow, no transform, no filter */
+.curtain-group {
+  position: relative;
+  width: 100%;
+}
+
+/* 3D Extruded Text Effect (Weights 500) */
+.text-3d-extruded {
+  color: #FFFFFF;
+  font-weight: 500;
+  text-shadow: 
+    0 1px 0 #cccccc,
+    0 2px 0 #b3b3b3,
+    0 3px 0 #999999,
+    0 4px 0 #808080,
+    0 5px 0 #666666,
+    0 8px 20px rgba(0, 0, 0, 0.7),
+    0 15px 40px rgba(255, 110, 16, 0.25);
+}
+
+.text-stroke-outline {
+  -webkit-text-stroke: 1.5px rgba(25, 25, 45, 0.18);
+  color: transparent;
+}
+
+.text-stroke-outline-dark {
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.12);
+  color: transparent;
+}
+
+/* Glassmorphism helpers */
+.glass-dark {
+  background: rgba(18, 18, 34, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-light {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* Smooth gradient glows */
+.orange-glow {
+  background: radial-gradient(circle, rgba(255, 110, 16, 0.25) 0%, rgba(255, 90, 31, 0) 70%);
+}
+
+.sky-glow {
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.2) 0%, rgba(56, 189, 248, 0) 70%);
+}
+
+/* Prevent Lenis scroll jumping on interactive overlays */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}

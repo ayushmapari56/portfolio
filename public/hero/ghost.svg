@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="#000000"/>
+  <!-- Skyline silhouettes -->
+  <path d="M 0 1080 L 0 750 L 80 750 L 80 620 L 140 620 L 140 750 L 220 750 L 220 500 L 280 500 L 280 460 L 300 420 L 320 460 L 320 750 L 410 750 L 410 580 L 490 580 L 490 750 L 580 750 L 580 430 L 630 430 L 630 380 L 660 380 L 660 430 L 710 430 L 710 750 L 800 750 L 800 520 L 880 520 L 880 750 L 970 750 L 970 340 L 1000 300 L 1030 340 L 1030 750 L 1120 750 L 1120 480 L 1190 480 L 1190 750 L 1280 750 L 1280 560 L 1360 560 L 1360 750 L 1440 750 L 1440 400 L 1480 370 L 1520 400 L 1520 750 L 1610 750 L 1610 540 L 1690 540 L 1690 750 L 1780 750 L 1780 610 L 1850 610 L 1850 750 L 1920 750 L 1920 1080 Z" fill="url(#sky)"/>
+  <!-- Windows -->
+  <g fill="#ffffff" opacity="0.3">
+    <rect x="235" y="520" width="8" height="12"/><rect x="255" y="520" width="8" height="12"/>
+    <rect x="235" y="550" width="8" height="12"/><rect x="255" y="550" width="8" height="12"/>
+    <rect x="235" y="580" width="8" height="12"/><rect x="255" y="580" width="8" height="12"/>
+    <rect x="595" y="460" width="10" height="14"/><rect x="615" y="460" width="10" height="14"/>
+    <rect x="595" y="490" width="10" height="14"/><rect x="615" y="490" width="10" height="14"/>
+    <rect x="985" y="380" width="10" height="14"/><rect x="1005" y="380" width="10" height="14"/>
+    <rect x="985" y="410" width="10" height="14"/><rect x="1005" y="410" width="10" height="14"/>
+    <rect x="1455" y="430" width="10" height="14"/><rect x="1485" y="430" width="10" height="14"/>
+  </g>
+</svg>

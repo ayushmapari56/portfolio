@@ -45,7 +45,7 @@ export default function SplitReveal({
 
   return (
     <Tag
-      ref={ref as React.RefObject<HTMLElement>}
+      ref={ref as any}
       className={`${className} font-medium`}
       aria-label={children.replace(/\n/g, " ")}
     >

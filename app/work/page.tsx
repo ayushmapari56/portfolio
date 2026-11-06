@@ -17,15 +17,17 @@ export default function WorkPage() {
 
   // Featured Projects:
   // 1. Dentora (Dentist Web Flagship with real doctor/clinic photo)
-  // 2. Velvet & Stone (Specialty Coffee & Bakehouse)
-  // 3. AURA (Culinary Atelier & Cafe with kinetic food choreography)
-  // 4. Autonomous Lead Routing Hub (AI & n8n Automation)
+  // 2. Capello (Luxury Salon, Trichology & Bridal Atelier)
+  // 3. Velvet & Stone (Specialty Coffee & Bakehouse)
+  // 4. AURA (Culinary Atelier & Cafe with kinetic food choreography)
+  // 5. Autonomous Lead Routing Hub (AI & n8n Automation)
   const dentora = projectsData.find((p) => p.id === "dentora-dental-clinic") || projectsData[0];
-  const velvetCafe = projectsData.find((p) => p.id === "velvet-stone-cafe") || projectsData[1];
-  const auraCafe = projectsData.find((p) => p.id === "aura-culinary-cafe") || projectsData[2];
-  const aiAutomation = projectsData.find((p) => p.category === "AI Automation") || projectsData[4];
+  const capelloSalon = projectsData.find((p) => p.id === "capello-luxury-salon");
+  const velvetCafe = projectsData.find((p) => p.id === "velvet-stone-cafe");
+  const auraCafe = projectsData.find((p) => p.id === "aura-culinary-cafe");
+  const aiAutomation = projectsData.find((p) => p.category === "AI Automation");
 
-  const featuredProjects = [dentora, velvetCafe, auraCafe, aiAutomation].filter(Boolean);
+  const featuredProjects = [dentora, capelloSalon, velvetCafe, auraCafe, aiAutomation].filter(Boolean) as Project[];
 
   return (
     <div className="min-h-screen bg-[#F4F1EA] text-[#0B0B14]">
@@ -67,7 +69,7 @@ export default function WorkPage() {
             </span>
             <span className="h-px w-16 bg-[#DDD7C8]" />
             <span className="text-mono-label font-mono font-medium tracking-[0.12em] text-[#8C887E]">
-              01 / 04
+              01 / 05
             </span>
           </div>
 
@@ -81,7 +83,7 @@ export default function WorkPage() {
         </div>
       </section>
 
-      {/* ── 3 Projects: Left Image, Right Description ── */}
+      {/* ── Featured Projects: Left Image, Right Description ── */}
       <section className="pb-28 md:pb-40 px-[5vw]">
         <div className="max-w-[1400px] mx-auto space-y-24 md:space-y-36">
           {featuredProjects.map((project, idx) => (

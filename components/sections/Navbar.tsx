@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef, useCallback } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { siteConfig } from "@/data/config";
 import { servicesList } from "@/data/services";
@@ -90,12 +91,18 @@ export default function Navbar({ onOpenContact }: NavbarProps) {
         <div className="max-w-[1400px] mx-auto flex items-center justify-between">
           {/* Logo Left */}
           <a href="#" className="flex items-center gap-3 group shrink-0">
-            <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-orange-500 to-amber-400 flex items-center justify-center text-white text-xs font-black shadow-md group-hover:scale-105 transition-transform">
-              <Sparkles size={14} />
+            <div className="w-9 h-9 relative rounded-xl overflow-hidden shadow-sm group-hover:scale-105 transition-transform flex items-center justify-center bg-white border border-[#DDD7C8] p-0.5">
+              <Image
+                src="/logo.png"
+                alt="AK - Ayush & Kishori"
+                width={36}
+                height={36}
+                className="object-contain w-full h-full"
+              />
             </div>
             <div className="flex flex-col">
               <span className="font-bold tracking-tight text-sm text-[#0B0B14] group-hover:text-orange-600 transition-colors">
-                {siteConfig.duoName.split(" & ")[0]}
+                Ayush &amp; Kishori
               </span>
               <span className="text-[10px] font-mono -mt-0.5 text-[#8C887E]">
                 {siteConfig.duoHandle}

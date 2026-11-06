@@ -224,10 +224,10 @@ export default function Footer({ onOpenContact }: FooterProps) {
           </div>
         </div>
 
-        {/* Giant faint watermark outline */}
-        <div className="relative w-full text-center select-none pointer-events-none py-8 overflow-hidden">
-          <span className="text-[clamp(40px,11vw,160px)] font-black uppercase text-stroke-outline-dark opacity-15 tracking-tight whitespace-nowrap block">
-            Ayush &amp; Kishori
+        {/* Brand Display Mark - Clear, visible & proportional */}
+        <div className="relative w-full text-center select-none py-4 my-2 overflow-hidden">
+          <span className="text-[clamp(1.75rem,5.5vw,4.75rem)] font-black uppercase tracking-tight whitespace-nowrap block bg-gradient-to-b from-white/30 via-white/15 to-transparent bg-clip-text text-transparent">
+            AYUSH &amp; KISHORI
           </span>
         </div>
 

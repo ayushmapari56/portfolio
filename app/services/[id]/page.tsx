@@ -66,6 +66,21 @@ export default async function ServicePage({
             <span>All Disciplines</span>
           </Link>
 
+          <Link href="/" className="flex items-center gap-2.5 group">
+            <div className="w-9 h-9 relative rounded-xl overflow-hidden shadow-sm group-hover:scale-105 transition-transform flex items-center justify-center bg-white border border-[#DDD7C8] p-0.5">
+              <Image
+                src="/logo.png"
+                alt="AK - Ayush & Kishori"
+                width={36}
+                height={36}
+                className="object-contain w-full h-full"
+              />
+            </div>
+            <span className="font-bold tracking-tight text-xs text-[#0B0B14] group-hover:text-orange-600 transition-colors hidden sm:inline">
+              Beyond the Visuals
+            </span>
+          </Link>
+
           <div className="flex items-center gap-4">
             <Link
               href="/work"

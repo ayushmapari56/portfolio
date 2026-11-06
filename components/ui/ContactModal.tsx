@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Send, CheckCircle2, MessageSquare, ArrowUpRight } from "lucide-react";
 import { siteConfig } from "@/data/config";
@@ -67,16 +68,27 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
               <X size={20} />
             </button>
 
-            <div className="mb-6">
-              <span className="text-mono-label uppercase font-mono tracking-[0.12em] text-orange-400">
-                Let&apos;s Build Together
-              </span>
-              <h3 className="text-card font-medium tracking-[-0.02em] leading-[1.15] mt-1">
-                Start a Conversation
-              </h3>
-              <p className="text-body text-neutral-400 mt-2 leading-[1.6]">
-                Tell us about your project, website goals, or AI automation ideas.
-              </p>
+            <div className="mb-6 flex items-start gap-4">
+              <div className="w-12 h-12 relative rounded-2xl overflow-hidden shadow-lg shrink-0 bg-black/60 border border-white/15 p-1">
+                <Image
+                  src="/logo.png"
+                  alt="AK Logo"
+                  width={48}
+                  height={48}
+                  className="object-contain w-full h-full"
+                />
+              </div>
+              <div>
+                <span className="text-mono-label uppercase font-mono tracking-[0.12em] text-orange-400">
+                  Let&apos;s Build Together
+                </span>
+                <h3 className="text-card font-medium tracking-[-0.02em] leading-[1.15] mt-1">
+                  Start a Conversation
+                </h3>
+                <p className="text-body text-neutral-400 mt-1 leading-[1.6]">
+                  Tell us about your project, website goals, or AI automation ideas.
+                </p>
+              </div>
             </div>
 
             {status === "success" ? (

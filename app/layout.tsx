@@ -63,7 +63,12 @@ export const metadata: Metadata = {
     creator: siteConfig.duoHandle,
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/logo.png", type: "image/png" },
+    ],
+    apple: [
+      { url: "/logo.png" },
+    ],
   },
 };
 

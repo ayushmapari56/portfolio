@@ -1,6 +1,7 @@
 export interface SiteConfig {
   duoName: string;
   duoHandle: string;
+  logoUrl: string;
   tagline: string;
   heroHeadline: string;
   heroSubheadline: string;
@@ -19,6 +20,7 @@ export interface SiteConfig {
 export const siteConfig: SiteConfig = {
   duoName: "Ayush Mapari & Kishori Charpe",
   duoHandle: "@ayush_kishori",
+  logoUrl: "/logo.png",
   tagline: "Websites & AI automations that actually grow your business",
   heroHeadline: "Beyond the Visuals",
   heroSubheadline: "Two specialists bridging high-converting engineering with autonomous AI workflows.",

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { siteConfig } from "@/data/config";
 
@@ -52,11 +53,25 @@ export default function Preloader() {
           </div>
 
           <div className="flex flex-col items-center justify-center text-center">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.05, duration: 0.5 }}
+              className="w-16 h-16 sm:w-20 sm:h-20 relative mb-4 filter drop-shadow-[0_0_30px_rgba(255,180,0,0.4)]"
+            >
+              <Image
+                src="/logo.png"
+                alt="AK Logo"
+                fill
+                className="object-contain"
+                priority
+              />
+            </motion.div>
             <motion.p
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.05 }}
-              className="text-mono-label font-mono uppercase tracking-[0.15em] text-neutral-400 mb-3"
+              transition={{ delay: 0.1 }}
+              className="text-mono-label font-mono uppercase tracking-[0.15em] text-neutral-400 mb-2"
             >
               Ayush &amp; Kishori
             </motion.p>

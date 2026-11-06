@@ -127,8 +127,15 @@ export default function Hero({ onOpenContact }: HeroProps) {
           transition={{ duration: 0.6, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
           className="flex items-center gap-3 group text-white pointer-events-auto"
         >
-          <div className="w-8 h-8 rounded-full bg-white/15 backdrop-blur-sm border border-white/30 flex items-center justify-center text-white text-xs font-black shadow-sm group-hover:scale-105 transition-transform">
-            <Sparkles size={14} />
+          <div className="w-10 h-10 relative rounded-xl overflow-hidden shadow-lg group-hover:scale-105 transition-transform flex items-center justify-center bg-black/40 border border-white/20 backdrop-blur-md p-1">
+            <Image
+              src="/logo.png"
+              alt="AK - Ayush & Kishori"
+              width={40}
+              height={40}
+              className="object-contain w-full h-full"
+              priority
+            />
           </div>
           <div className="flex flex-col">
             <span className="font-medium tracking-tight text-sm text-white group-hover:text-white/80 transition-colors">
